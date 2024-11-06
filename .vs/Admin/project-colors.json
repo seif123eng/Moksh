@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ecfe8c12-5175-49fb-923c-c06dffd7f184": {
+      "ProjectGuid": "ecfe8c12-5175-49fb-923c-c06dffd7f184",
+      "DisplayName": "Admin",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

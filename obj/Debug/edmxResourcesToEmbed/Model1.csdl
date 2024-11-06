@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmpolyeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Em_ID" />
+    </Key>
+    <Property Name="Em_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Names" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="states" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="Em_ID" />
+    </Key>
+    <Property Name="Em_ID" Type="Int32" Nullable="false" />
+    <Property Name="Names" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="States" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="EmpolyeeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Table_1" EntityType="Self.Table_1" />
+  </EntityContainer>
+</Schema>
